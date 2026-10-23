@@ -1,0 +1,50 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Model checkpoints and weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+models/*
+!models/.gitkeep
+
+# Datasets and training artifacts
+data/
+train/
+datasets/
+*.npy
+
+# Local secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Test images and generated results
+blurry_real_test.jpeg
+control_real_*.jpeg
+phone_test.*
+comparison_*.jpg
+pair_*.png
+gradcam_*.png
+gradcam_*.jpg
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python testing caches
+.pytest_cache/
+.mypy_cache/
+.coverage
